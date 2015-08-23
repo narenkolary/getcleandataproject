@@ -19,12 +19,10 @@ Segment 2:
 This section of the code reads in all the required txt files that are required for the tidying of data.
 
 Segment 3:
-This section of the code prepares the indivdual (test and training) dataset for tidying by renaming some of the columns (variables).
-This section also binds the columns of the test and training datasets respectively with the Subject ID and Activity data.
+This section of the code prepares the indivdual (test and training) dataset for tidying by renaming some of the columns (variables). The Subject ID information and Activity columns are given the appropriate labels so that merging is accomplished in an easier manner at a later stage. Each observation (as described in X_test and X_train) is recorded as a separate row and bound together (using cbind) with the respective Subject ID and Activity being observed.
 
 Segment 4:
-This section of the code combines the test and training data using the rbind command and extracts the specific variables representing the mean and standard deviations of the observations. 
-The column names are given appropriate descriptions along with the activity names as factors.
+This section of the code combines the test and training data using the rbind command. At this stage, all the data and variables recorded are included in the dataset. The next step extracts the specific variables representing the mean and standard deviations of the observations (as per assumptions mentioned). The data set is further tidied by applying appropriate descriptions for the variables (using features.txt) along with the activity names(activity_labels.txt) as factors. These descriptive variables are further detailed in the codebook.
 
 Segment 5:
 This section of the code extracts an independent tidy data set using the reshape2 package consisting of the average values of each observation, arranged by combinations of Subject ID and Activity (180 total combinations). 
