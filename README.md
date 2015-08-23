@@ -31,4 +31,4 @@ The table is arranged in a wide format since it would be easier to look up the S
 
 Segment 6:
 This section of the code writes the final tidy data set to a txt file in the working directory.
-This file can be re-read into R using the command read.table("finaldataset.txt", header = TRUE)
+This file can be re-read into R using the command > read.table("finaldataset.txt", header = TRUE)
