@@ -2,7 +2,7 @@
 Course Project for Getting and Cleaning Data - Coursera
 
 This readme file describes the run_analysis.R script uploaded in the repo towards the Getting and Cleaning Data Project.
-A separate codebook is uploaded that discusses the individual variables and the final data set.
+A separate codebook is uploaded that discusses the individual variables and the final data set according to the principles set out in Hadley Wickham's paper.
 
 Assumptions/Notes: 
 The Samsung dataset is downloaded and present in the working directory in the same format as available from the weblink.
